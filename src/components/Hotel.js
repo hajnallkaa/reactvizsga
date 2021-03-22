@@ -21,7 +21,7 @@ const Hotel = ({ hotel }) => {
             {showDetails && hotel.stars}
             {showDetails && hotel.city}
             {moreinfo && <Subscription /> } <br />
-            {showDetails && <button onClick={moreInfo}>Request more info</button>}
+            {showDetails && <button onClick={moreInfo}>{"Request more info about " + hotel.name} </button>}
             <p>
                 <button onClick={setDetails}>{showDetails ? 'show less' : 'show more'}</button>
             </p>
